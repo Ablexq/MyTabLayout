@@ -1,0 +1,15 @@
+<!-- tab所需xml -->
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview_menu"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbarAlwaysDrawHorizontalTrack="false"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/ll_mytab_hs_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" />
+
+</HorizontalScrollView>
