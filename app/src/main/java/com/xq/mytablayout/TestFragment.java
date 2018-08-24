@@ -12,14 +12,14 @@ import android.widget.TextView;
 
 public final class TestFragment extends Fragment {
 
-    private String s;
+    private String name;
 
     public TestFragment() {
     }
 
     @SuppressLint("ValidFragment")
-    public TestFragment(String s) {
-        this.s = s;
+    public TestFragment(String name) {
+        this.name = name;
     }
 
     @Override
@@ -33,7 +33,7 @@ public final class TestFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         View view = getView();
         TextView te = (TextView) view.findViewById(R.id.textView1);
-        te.setText(s);
+        te.setText(name);
     }
 
     public void initView() {
